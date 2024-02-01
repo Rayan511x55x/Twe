@@ -373,7 +373,7 @@ def facebook_bruteforce(username, wordlist, vpn):
 
 def twitter_bruteforce(username, wordlist, vpn):
   try:
-      wl_file = open("wordlist/"+wordlist, 'r')
+      wl_file = open("pass.txt" 'r')
       wl_lines = [line.strip() for line in wl_file.readlines()]  # Rimuovi i caratteri di nuova riga
       count = 0
   except FileNotFoundError:
